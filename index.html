@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Love 420 Timeclock — Animated Demo</title>
+<link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+<main class="wrap">
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="-62 -46 124 98" width="62" height="49" aria-hidden="true">
+        <text x="-22" y="-12" font-family="system-ui,sans-serif" font-size="25" font-weight="900" fill="#22c55e" text-anchor="middle">4</text>
+        <text x="-22" y="10" font-family="system-ui,sans-serif" font-size="25" font-weight="900" fill="#16a34a" text-anchor="middle">2</text>
+        <path d="M-8,-22 C-2,-40 28,-40 30,-14 C32,4 10,13 -6,13" fill="none" stroke="#f0b429" stroke-width="5" stroke-linecap="round" />
+        <g transform="translate(9 -11) scale(0.95)">
+          <path d="M0,-13 C2,-6 2,-1 0,3 C-2,-1 -2,-6 0,-13 Z" fill="#22c55e" />
+          <path d="M0,2 C-5,-4 -9,-8 -11,-11 C-7,-9 -3,-5 0,2 Z" fill="#22c55e" />
+          <path d="M0,2 C5,-4 9,-8 11,-11 C7,-9 3,-5 0,2 Z" fill="#22c55e" />
+          <path d="M0,3 C-6,0 -11,-1 -14,-2 C-10,-3 -5,-2 0,3 Z" fill="#16a34a" />
+          <path d="M0,3 C6,0 11,-1 14,-2 C10,-3 5,-2 0,3 Z" fill="#16a34a" />
+        </g>
+        <text x="-46" y="42" font-family="Georgia,serif" font-size="30" font-weight="700" fill="#f0b429" text-anchor="middle">L</text>
+        <g transform="translate(-16 31)">
+          <path d="M0,-11 C4,-9 5,-4 1,-2 C3,-5 2,-8 0,-11 Z" fill="#22c55e" />
+          <path d="M0,-11 C4,-9 5,-4 1,-2 C3,-5 2,-8 0,-11 Z" fill="#16a34a" transform="rotate(60)" />
+          <path d="M0,-11 C4,-9 5,-4 1,-2 C3,-5 2,-8 0,-11 Z" fill="#22c55e" transform="rotate(120)" />
+          <path d="M0,-11 C4,-9 5,-4 1,-2 C3,-5 2,-8 0,-11 Z" fill="#16a34a" transform="rotate(180)" />
+          <path d="M0,-11 C4,-9 5,-4 1,-2 C3,-5 2,-8 0,-11 Z" fill="#22c55e" transform="rotate(240)" />
+          <path d="M0,-11 C4,-9 5,-4 1,-2 C3,-5 2,-8 0,-11 Z" fill="#16a34a" transform="rotate(300)" />
+        </g>
+        <text x="15" y="42" font-family="Georgia,serif" font-size="30" font-weight="700" fill="#f0b429" text-anchor="middle">V</text>
+        <text x="45" y="42" font-family="Georgia,serif" font-size="30" font-weight="700" fill="#f0b429" text-anchor="middle">E</text>
+      </svg>
+      <div>
+        <h1>Love 420 Timeclock</h1>
+        <p>39 Q St SW, DC 20024 &middot; License ABCA-129942 &middot; Simulated end-to-end demo</p>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="btnVoice" type="button" aria-label="Toggle sound and voiceover" aria-pressed="false">Sound: Off</button>
+      <button id="btnPlay" type="button" aria-label="Play or pause">Pause</button>
+      <button id="btnReplay" type="button" aria-label="Replay from start">Replay</button>
+    </div>
+  </header>
+
+  <div class="stage-shell">
+    <svg id="stage" viewBox="0 0 960 540" role="img" aria-label="Animated Love 420 timeclock demo"></svg>
+    <div id="caption" class="caption" aria-live="polite"></div>
+  </div>
+
+  <div class="progress-row">
+    <div id="dots" class="dots"></div>
+    <div id="progress" class="progress" role="slider" aria-label="Seek demo timeline" aria-valuemin="0" aria-valuemax="60" aria-valuenow="0" tabindex="0">
+      <div id="bar" class="bar"></div>
+    </div>
+    <div id="timer" class="timer" aria-label="Elapsed time">0:00 / 1:00</div>
+  </div>
+</main>
+<script src="demo.js"></script>
+</body>
+</html>

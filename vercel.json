@@ -1,0 +1,5 @@
+{
+  "buildCommand": "node build-promo.mjs",
+  "outputDirectory": ".",
+  "cleanUrls": true
+}
